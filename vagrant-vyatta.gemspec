@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["yuya.kusakabe@gmail.com"]
   spec.description   = "Vyatta Guest Support for Vagrant"
   spec.summary       = "A small gem that adds Vyatta guest support to vagrant."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/higebu/vagrant-vyatta"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($\)

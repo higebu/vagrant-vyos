@@ -37,8 +37,8 @@ $WRAPPER end
             temp.close
 
             comm.upload(temp.path, "/tmp/vagrant-configure-network")
-            comm.sudo("sudo bash /tmp/vagrant-configure-network")
-            comm.sudo("sudo rm /tmp/vagrant-configure-network")
+            comm.execute("bash /tmp/vagrant-configure-network")
+            comm.execute("rm -f /tmp/vagrant-configure-network")
           end
         end
       end

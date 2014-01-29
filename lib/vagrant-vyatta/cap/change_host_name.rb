@@ -24,8 +24,8 @@ $WRAPPER end
               temp.close
 
               comm.upload(temp.path, "/tmp/vagrant-change-hostname")
-              comm.sudo("sudo bash /tmp/vagrant-change-hostname")
-              comm.sudo("sudo rm /tmp/vagrant-change-hostname")
+              comm.execute("bash /tmp/vagrant-change-hostname")
+              comm.execute("rm -f /tmp/vagrant-change-hostname")
             end
           end
         end
