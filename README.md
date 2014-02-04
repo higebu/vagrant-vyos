@@ -1,4 +1,5 @@
 # vagrant-vyatta
+[![Build Status](https://travis-ci.org/higebu/vagrant-vyatta.png)](https://travis-ci.org/higebu/vagrant-vyatta)
 
 Vagrant-vyatta is a [Vagrant](http://www.vagrantup.com) plugin that adds a [Vyatta](http://www.vyatta.org/) support to Vagrant.
 
