@@ -1,7 +1,7 @@
 # vagrant-vyatta
 [![Build Status](https://travis-ci.org/higebu/vagrant-vyatta.png)](https://travis-ci.org/higebu/vagrant-vyatta)
 
-Vagrant-vyatta is a [Vagrant](http://www.vagrantup.com) plugin that adds a [Vyatta](http://www.vyatta.org/) support to Vagrant.
+Vagrant-vyatta is a [Vagrant](http://www.vagrantup.com) plugin that adds [Vyatta](http://www.vyatta.org/) and [VyOS](http://vyos.net/wiki/Main_Page) support to Vagrant.
 
 This plugin fixes following features.
 
@@ -18,8 +18,7 @@ $ vagrant plugin install vagrant-vyatta
 ## Usage
 
 ```
-$ vagrant box add vyatta http://higebu.com/box/vyatta-livecd_VC6.5R1_amd64_virtualbox.box
-$ vagrant init vyatta
+$ vagrant init higebu/vyos-1.0.2
 $ vagrant up
 ```
 
