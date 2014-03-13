@@ -1,5 +1,8 @@
 # vagrant-vyatta
 [![Build Status](https://travis-ci.org/higebu/vagrant-vyatta.png)](https://travis-ci.org/higebu/vagrant-vyatta)
+[![Code Climate](https://codeclimate.com/repos/5302538e69568020f60027b2/badges/c5b01915845941764536/gpa.png)](https://codeclimate.com/repos/5302538e69568020f60027b2/feed)
+[![Gem Version](https://badge.fury.io/rb/vagrant-vyatta.png)](http://badge.fury.io/rb/vagrant-vyatta)
+[![Dependency Status](https://gemnasium.com/higebu/vagrant-vyatta.png)](https://gemnasium.com/higebu/vagrant-vyatta)
 
 Vagrant-vyatta is a [Vagrant](http://www.vagrantup.com) plugin that adds [Vyatta](http://www.vyatta.org/) and [VyOS](http://vyos.net/wiki/Main_Page) support to Vagrant.
 
