@@ -3,5 +3,6 @@ before_install:
   - gem install bundler -v '1.5.3'
 script: bundle exec rake build
 rvm:
+- 2.1.2
 - 2.0.0
 - 1.9.3
