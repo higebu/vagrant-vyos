@@ -21,7 +21,7 @@ $ vagrant plugin install vagrant-vyatta
 ## Usage
 
 ```
-$ vagrant init higebu/vyos-1.0.2
+$ vagrant init higebu/vyos-1.0.4
 $ vagrant up
 ```
 
