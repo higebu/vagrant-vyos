@@ -1,6 +1,6 @@
 # vagrant-vyos
 [![Build Status](https://travis-ci.org/higebu/vagrant-vyos.png)](https://travis-ci.org/higebu/vagrant-vyos)
-[![Code Climate](https://codeclimate.com/repos/5302538e69568020f60027b2/badges/c5b01915845941764536/gpa.png)](https://codeclimate.com/repos/5302538e69568020f60027b2/feed)
+[![Code Climate](https://codeclimate.com/github/higebu/vagrant-vyos/badges/gpa.svg)](https://codeclimate.com/github/higebu/vagrant-vyos)
 [![Gem Version](https://badge.fury.io/rb/vagrant-vyos.png)](http://badge.fury.io/rb/vagrant-vyos)
 [![Dependency Status](https://gemnasium.com/higebu/vagrant-vyos.png)](https://gemnasium.com/higebu/vagrant-vyos)
 
