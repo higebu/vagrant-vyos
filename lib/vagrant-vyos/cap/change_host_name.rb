@@ -1,7 +1,7 @@
 require 'tempfile'
 
 module VagrantPlugins
-  module GuestVyatta
+  module GuestVyOS
     module Cap
       class ChangeHostName
         def self.change_host_name(machine, name)
@@ -9,13 +9,10 @@ module VagrantPlugins
             if !comm.test("sudo hostname | grep '^#{name}$'")
 
               commands = <<-EOS
-WRAPPER=/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper
-. /etc/bash_completion
-$WRAPPER begin
-$WRAPPER set system host-name #{name}
-$WRAPPER commit
-$WRAPPER save
-$WRAPPER end
+source /opt/vyatta/etc/functions/script-template
+set system host-name #{name}
+commit
+save
               EOS
 
               temp = Tempfile.new("vagrant")

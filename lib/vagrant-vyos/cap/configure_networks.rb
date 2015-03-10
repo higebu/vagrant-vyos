@@ -2,7 +2,7 @@ require 'ipaddr'
 require 'tempfile'
 
 module VagrantPlugins
-  module GuestVyatta
+  module GuestVyOS
     module Cap
       class ConfigureNetworks
 
@@ -10,25 +10,22 @@ module VagrantPlugins
           machine.communicate.tap do |comm|
 
             commands = <<-EOS
-WRAPPER=/opt/vyatta/sbin/vyatta-cfg-cmd-wrapper
-. /etc/bash_completion
-$WRAPPER begin
+source /opt/vyatta/etc/functions/script-template
             EOS
 
             networks.each do |network|
-              commands << "$WRAPPER delete interfaces ethernet eth#{network[:interface]}\n"
+              commands << "delete interfaces ethernet eth#{network[:interface]}\n"
               if network[:type].to_sym == :static
                 subnet = IPAddr.new(network[:netmask]).to_i.to_s(2).count("1")
-                commands << "$WRAPPER set interfaces ethernet eth#{network[:interface]} address #{network[:ip]}/#{subnet}\n"
+                commands << "set interfaces ethernet eth#{network[:interface]} address #{network[:ip]}/#{subnet}\n"
               elsif network[:type].to_sym == :dhcp
-                commands << "$WRAPPER set interfaces ethernet eth#{network[:interface]} address dhcp\n"
+                commands << "set interfaces ethernet eth#{network[:interface]} address dhcp\n"
               end
             end
 
             commands << <<-EOS
-$WRAPPER commit
-$WRAPPER save
-$WRAPPER end
+ commit
+ save
             EOS
 
             temp = Tempfile.new("vagrant")

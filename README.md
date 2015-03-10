@@ -1,10 +1,10 @@
-# vagrant-vyatta
-[![Build Status](https://travis-ci.org/higebu/vagrant-vyatta.png)](https://travis-ci.org/higebu/vagrant-vyatta)
+# vagrant-vyos
+[![Build Status](https://travis-ci.org/higebu/vagrant-vyos.png)](https://travis-ci.org/higebu/vagrant-vyos)
 [![Code Climate](https://codeclimate.com/repos/5302538e69568020f60027b2/badges/c5b01915845941764536/gpa.png)](https://codeclimate.com/repos/5302538e69568020f60027b2/feed)
-[![Gem Version](https://badge.fury.io/rb/vagrant-vyatta.png)](http://badge.fury.io/rb/vagrant-vyatta)
-[![Dependency Status](https://gemnasium.com/higebu/vagrant-vyatta.png)](https://gemnasium.com/higebu/vagrant-vyatta)
+[![Gem Version](https://badge.fury.io/rb/vagrant-vyos.png)](http://badge.fury.io/rb/vagrant-vyos)
+[![Dependency Status](https://gemnasium.com/higebu/vagrant-vyos.png)](https://gemnasium.com/higebu/vagrant-vyos)
 
-Vagrant-vyatta is a [Vagrant](http://www.vagrantup.com) plugin that adds [Vyatta](http://www.vyatta.org/) and [VyOS](http://vyos.net/wiki/Main_Page) support to Vagrant.
+Vagrant-vyos is a [Vagrant](http://www.vagrantup.com) plugin that adds [VyOS](http://vyos.net/wiki/Main_Page) support to Vagrant.
 
 This plugin fixes following features.
 
@@ -15,13 +15,13 @@ This plugin fixes following features.
 ## Installation
 
 ```
-$ vagrant plugin install vagrant-vyatta
+$ vagrant plugin install vagrant-vyos
 ```
 
 ## Usage
 
 ```
-$ vagrant init higebu/vyos-1.0.4
+$ vagrant init higebu/vyos-1.1.4
 $ vagrant up
 ```
 

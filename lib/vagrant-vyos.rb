@@ -1,10 +1,10 @@
 require "pathname"
 
-require "vagrant-vyatta/plugin"
+require "vagrant-vyos/plugin"
 
 module VagrantPlugins
-  module GuestVyatta
-    lib_path = Pathname.new(File.expand_path("../vagrant-vyatta", __FILE__))
+  module GuestVyOS
+    lib_path = Pathname.new(File.expand_path("../vagrant-vyos", __FILE__))
     autoload :Action, lib_path.join("action")
     autoload :Errors, lib_path.join("errors")
 

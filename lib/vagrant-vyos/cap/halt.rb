@@ -1,5 +1,5 @@
 module VagrantPlugins
-  module GuestVyatta
+  module GuestVyOS
     module Cap
       class Halt
         def self.halt(machine)
