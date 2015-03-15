@@ -21,7 +21,7 @@ $ vagrant plugin install vagrant-vyos
 ## Usage
 
 ```
-$ vagrant init higebu/vyos-1.1.4
+$ vagrant init higebu/vyos-1.1.4-amd64
 $ vagrant up
 ```
 
