@@ -11,6 +11,7 @@ This plugin fixes following features.
 * `vagrant halt`.
 * `config.vm.hostname`.
 * `config.vm.network`.
+* `config.ssh.insert_key`.
 
 ## Installation
 
