@@ -7,25 +7,27 @@ module VagrantPlugins
 
           key_type, key_value, key_name = contents.split()
 
-          machine.communicate.tap do |comm|
-
-            commands = <<-EOS
+          commands = <<-EOS
 source /opt/vyatta/etc/functions/script-template
 show system login user vagrant authentication public-keys #{key_name} key | grep #{key_value} || exit 0
 delete system login user vagrant authentication public-keys #{key_name}
 commit
 save
-            EOS
+          EOS
 
-            temp = Tempfile.new("vagrant")
-            temp.binmode
-            temp.write(commands)
-            temp.close
+          temp = Tempfile.new("vagrant")
+          temp.binmode
+          temp.write(commands)
+          temp.close
 
+          machine.communicate.tap do |comm|
             comm.upload(temp.path, "/tmp/vagrant-remove-public-key")
             comm.execute("bash /tmp/vagrant-remove-public-key")
             comm.execute("rm -f /tmp/vagrant-remove-public-key")
           end
+
+          temp.unlink
+
         end
       end
     end
