@@ -16,11 +16,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths  = ["lib"]
 
-  spec.required_ruby_version     = ">= 2.0.0"
+  spec.required_ruby_version     = "~> 2.2"
   spec.required_rubygems_version = ">= 1.3.6"
   spec.rubyforge_project = "vagrant-vyos"
 
-  spec.add_development_dependency "bundler", ">= 1.5.2", "<= 1.10.6"
+  spec.add_development_dependency "bundler", "= 1.12.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec-core", "~> 3.4.3"
   spec.add_development_dependency "rspec-expectations", "~> 3.4.0"
