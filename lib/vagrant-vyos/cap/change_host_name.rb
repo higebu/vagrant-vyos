@@ -9,6 +9,9 @@ module VagrantPlugins
             if !comm.test("sudo hostname | grep '^#{name}$'")
 
               commands = <<-EOS
+if [ "$(id -g -n)" != 'vyattacfg' ] ; then
+  exec sg vyattacfg -c "/bin/vbash $(readlink -f $0) $@"
+fi
 source /opt/vyatta/etc/functions/script-template
 set system host-name #{name}
 commit
