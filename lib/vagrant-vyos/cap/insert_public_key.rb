@@ -5,6 +5,7 @@ module VagrantPlugins
         def self.insert_public_key(machine, contents)
           contents = contents.chomp
 
+          ssh_username = machine.config.ssh.username
           key_type, key_value, key_name = contents.split()
 
           commands = <<-EOS
@@ -12,8 +13,8 @@ if [ "$(id -g -n)" != 'vyattacfg' ] ; then
   exec sg vyattacfg -c "/bin/vbash $(readlink -f $0) $@"
 fi
 source /opt/vyatta/etc/functions/script-template
-set system login user vagrant authentication public-keys #{key_name} type #{key_type}
-set system login user vagrant authentication public-keys #{key_name} key #{key_value}
+set system login user #{ssh_username} authentication public-keys #{key_name} type #{key_type}
+set system login user #{ssh_username} authentication public-keys #{key_name} key #{key_value}
 commit
 save
           EOS
