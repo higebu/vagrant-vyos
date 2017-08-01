@@ -5,7 +5,7 @@ module VagrantPlugins
         def self.insert_public_key(machine, contents)
           contents = contents.chomp
 
-          ssh_username = machine.config.ssh.username
+          ssh_username = machine.config.ssh.username || "vagrant"
           key_type, key_value, key_name = contents.split()
 
           commands = <<-EOS
