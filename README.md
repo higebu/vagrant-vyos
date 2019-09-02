@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/higebu/vagrant-vyos.png)](https://travis-ci.org/higebu/vagrant-vyos)
 [![Code Climate](https://codeclimate.com/github/higebu/vagrant-vyos/badges/gpa.svg)](https://codeclimate.com/github/higebu/vagrant-vyos)
 [![Gem Version](https://badge.fury.io/rb/vagrant-vyos.svg)](https://badge.fury.io/rb/vagrant-vyos)
-[![Dependency Status](https://gemnasium.com/badges/github.com/higebu/vagrant-vyos.svg)](https://gemnasium.com/github.com/higebu/vagrant-vyos)
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/vagrant-vyos?type=total&style=flat)](https://rubygems.org/gems/vagrant-vyos)
 
 Vagrant-vyos is a [Vagrant](http://www.vagrantup.com) plugin that adds [VyOS](http://vyos.net/wiki/Main_Page) support to Vagrant.
@@ -23,7 +22,7 @@ $ vagrant plugin install vagrant-vyos
 ## Usage
 
 ```
-$ vagrant init higebu/vyos
+$ vagrant init vyos/current
 $ vagrant up
 ```
 
