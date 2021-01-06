@@ -1,5 +1,6 @@
 # vagrant-vyos
 [![Code Climate](https://codeclimate.com/github/higebu/vagrant-vyos/badges/gpa.svg)](https://codeclimate.com/github/higebu/vagrant-vyos)
+[![codecov](https://codecov.io/gh/higebu/vagrant-vyos/branch/master/graph/badge.svg?token=pHIHFPo6Ub)](https://codecov.io/gh/higebu/vagrant-vyos)
 [![Gem Version](https://badge.fury.io/rb/vagrant-vyos.svg)](https://badge.fury.io/rb/vagrant-vyos)
 [![Downloads](http://ruby-gem-downloads-badge.herokuapp.com/vagrant-vyos?type=total&style=flat)](https://rubygems.org/gems/vagrant-vyos)
 

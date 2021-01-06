@@ -1,3 +1,4 @@
+require 'helper'
 require 'vagrant-vyos/guest'
 require 'vagrant-vyos/plugin'
 require 'vagrant-vyos/cap/change_host_name'
