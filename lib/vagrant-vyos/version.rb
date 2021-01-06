@@ -1,5 +1,5 @@
 module VagrantPlugins
   module GuestVyOS
-    VERSION = "1.1.6"
+    VERSION = "1.1.7"
   end
 end
