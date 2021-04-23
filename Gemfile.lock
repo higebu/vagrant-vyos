@@ -36,7 +36,7 @@ GEM
     bcrypt_pbkdf (1.0.1)
     builder (3.2.4)
     childprocess (4.0.0)
-    codecov (0.4.3)
+    codecov (0.5.2)
       simplecov (>= 0.15, < 0.22)
     concurrent-ruby (1.1.7)
     diff-lcs (1.4.4)
