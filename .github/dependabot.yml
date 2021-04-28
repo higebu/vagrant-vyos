@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  reviewers:
+  - higebu
+  assignees:
+  - higebu
+  ignore:
+  - dependency-name: codecov
+    versions:
+    - 0.4.2
+    - 0.5.0
+    - 0.5.1
