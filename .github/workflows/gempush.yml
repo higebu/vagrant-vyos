@@ -1,32 +1,39 @@
-name: Ruby Gem
+name: release
 
 on:
-  release:
-    types:
-      - published
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
-    name: Build + Publish
+  release:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true
+      - uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          release-type: ruby
 
-    - name: Build
-      run: gem build *.gemspec
+      - uses: actions/checkout@v2
+        if: ${{ steps.release.outputs.release_created }}
 
-    - name: Publish
-      run: |
-        mkdir -p $HOME/.gem
-        touch $HOME/.gem/credentials
-        chmod 0600 $HOME/.gem/credentials
-        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
-        gem push *.gem
-      if: github.event_name == 'push'
-      env:
-        GEM_HOST_API_KEY: ${{secrets.RUBYGEMS_AUTH_TOKEN}}
+      - name: Set up Ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          bundler-cache: true
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Build
+        run: gem build *.gemspec
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Publish
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          gem push *.gem
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GEM_HOST_API_KEY: ${{secrets.RUBYGEMS_AUTH_TOKEN}}
