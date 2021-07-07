@@ -12,6 +12,7 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v2
         with:
           release-type: ruby
+          version-file: lib/vagrant-vyos/version.rb
 
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
