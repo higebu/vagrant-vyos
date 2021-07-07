@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.9](https://www.github.com/higebu/vagrant-vyos/compare/v1.1.8...v1.1.9) (2021-07-07)
+
+
+### Bug Fixes
+
+* remove Gemfile.lock ([7544922](https://www.github.com/higebu/vagrant-vyos/commit/75449224262d8c9405a7a23e2433691518c56021))
+
 ### [1.1.8](https://www.github.com/higebu/vagrant-vyos/compare/v1.1.7...v1.1.8) (2021-07-07)
 
 
