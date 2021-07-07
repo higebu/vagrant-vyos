@@ -1,10 +1,10 @@
-name: Ruby Gem
+name: test
 
 on: [push]
 
 jobs:
   build:
-    name: Test
+    name: test
     runs-on: ubuntu-latest
 
     steps:
