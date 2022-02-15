@@ -18,4 +18,3 @@ tmp
 .ruby-version
 .rbenv-gemsets
 .scannerwork/
-Gemfile.lock
