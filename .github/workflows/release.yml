@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
+        token: ${{ secrets.GH_TOKEN }}
         with:
           release-type: ruby
           version-file: lib/vagrant-vyos/version.rb
