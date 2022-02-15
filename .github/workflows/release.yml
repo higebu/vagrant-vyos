@@ -8,8 +8,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    env:
-      BUNDLE_FROZEN: true
+
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
@@ -29,7 +28,6 @@ jobs:
 
       - name: Build
         run: |
-          gem install bundler
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
           gem build *.gemspec
