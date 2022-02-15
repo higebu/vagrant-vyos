@@ -18,5 +18,6 @@ jobs:
       run: |
         gem install bundler
         bundle config path vendor/bundle
+        bundle config frozen true
         bundle install --jobs 4 --retry 3
         bundle exec rake spec
