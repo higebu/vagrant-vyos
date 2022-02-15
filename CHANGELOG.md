@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.1.10](https://github.com/higebu/vagrant-vyos/compare/v1.1.9...v1.1.10) (2022-02-15)
+
+
+### Bug Fixes
+
+* fix Gemfile.lock ([1190da6](https://github.com/higebu/vagrant-vyos/commit/1190da66fd3de5b991bdb84a8e31bde50d744120))
+* revert Gemfile.lock ([670e496](https://github.com/higebu/vagrant-vyos/commit/670e496fabcf7c4a06d299c3af8e7d1a33e122c7))
+
 ### [1.1.9](https://www.github.com/higebu/vagrant-vyos/compare/v1.1.8...v1.1.9) (2021-07-07)
 
 
