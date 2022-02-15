@@ -8,7 +8,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-
+    env:
+      BUNDLE_FROZEN: true
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
