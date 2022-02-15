@@ -8,8 +8,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    env:
-      BUNDLE_FROZEN: true
+
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
@@ -25,11 +24,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.6
-          bundler-cache: true
         if: ${{ steps.release.outputs.release_created }}
 
       - name: Build
-        run: gem build *.gemspec
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          gem build *.gemspec
         if: ${{ steps.release.outputs.release_created }}
 
       - name: Publish
