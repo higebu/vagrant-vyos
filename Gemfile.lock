@@ -27,7 +27,7 @@ GIT
 PATH
   remote: .
   specs:
-    vagrant-vyos (1.1.7)
+    vagrant-vyos (1.1.9)
 
 GEM
   remote: https://rubygems.org/
@@ -133,4 +133,4 @@ DEPENDENCIES
   vagrant-vyos!
 
 BUNDLED WITH
-   2.2.22
+   2.3.7
