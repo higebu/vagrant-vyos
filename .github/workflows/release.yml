@@ -17,7 +17,7 @@ jobs:
           release-type: ruby
           version-file: lib/vagrant-vyos/version.rb
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         if: ${{ steps.release.outputs.release_created }}
 
       - name: Set up Ruby 2.6
