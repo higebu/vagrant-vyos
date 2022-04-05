@@ -1,26 +1,6 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    ":separateMajorReleases",
-    ":combinePatchMinorReleases",
-    ":ignoreUnstable",
-    ":prImmediately",
-    ":semanticCommits",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":updateNotScheduled",
-    ":automergeMinor",
-    ":automergeDigest",
-    ":ignoreModulesAndTests",
-    ":maintainLockFilesDisabled",
-    ":autodetectPinVersions",
-    ":prHourlyLimitNone",
-    "group:monorepos",
-    "group:recommended",
-    ":timezone(Asia/Tokyo)",
-    "schedule:nonOfficeHours",
-    ":label(renovate)"
-  ],
-  "prConcurrentLimit": 1,
-  "baseBranches": [
-     "master"
+    "local>higebu/renovate-config"
   ]
 }
