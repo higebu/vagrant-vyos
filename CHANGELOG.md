@@ -8,6 +8,14 @@
 * **deps:** update actions/checkout action to v4 ([4871f71](https://github.com/higebu/vagrant-vyos/commit/4871f71f2039061f8ad22356a9e0aa9d86b9312a))
 * use simplecov-cobertura for coverage formatter ([31bf554](https://github.com/higebu/vagrant-vyos/commit/31bf5544d5470f9516e3fbe91e60321fa4e21092))
 
+## [1.1.11](https://github.com/higebu/vagrant-vyos/compare/v1.1.10...v1.1.11) (2024-09-02)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v4 ([4871f71](https://github.com/higebu/vagrant-vyos/commit/4871f71f2039061f8ad22356a9e0aa9d86b9312a))
+* use simplecov-cobertura for coverage formatter ([31bf554](https://github.com/higebu/vagrant-vyos/commit/31bf5544d5470f9516e3fbe91e60321fa4e21092))
+
 ### [1.1.10](https://www.github.com/higebu/vagrant-vyos/compare/v1.1.9...v1.1.10) (2022-02-15)
 
 
