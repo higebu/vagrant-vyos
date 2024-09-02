@@ -1,6 +1,7 @@
 {
   "packages": {
     ".": {
+      "package-name": "vagrant-vyos",
       "changelog-path": "CHANGELOG.md",
       "release-type": "ruby",
       "bump-minor-pre-major": false,
