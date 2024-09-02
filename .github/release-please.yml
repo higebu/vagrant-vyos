@@ -1,4 +1,0 @@
-releaseType: ruby
-versionFile: lib/vagrant-vyos/version.rb
-primaryBranch: master
-handleGHRelease: true
