@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.12](https://github.com/higebu/vagrant-vyos/compare/v1.1.11...v1.1.12) (2024-09-02)
+
+
+### Bug Fixes
+
+* fix CHANGELOG ([d4c1faf](https://github.com/higebu/vagrant-vyos/commit/d4c1faf2fb32dacefb9b6336d353a3f48e729547))
+
 ## [1.1.11](https://github.com/higebu/vagrant-vyos/compare/v1.1.10...v1.1.11) (2024-09-02)
 
 
