@@ -19,4 +19,4 @@ jobs:
         bundle install --jobs 4 --retry 3
         bundle exec rake spec
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
