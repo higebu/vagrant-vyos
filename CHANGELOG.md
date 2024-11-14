@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.13](https://github.com/higebu/vagrant-vyos/compare/vagrant-vyos/v1.1.12...vagrant-vyos/v1.1.13) (2024-11-14)
+
+
+### Bug Fixes
+
+* **deps:** update codecov/codecov-action action to v5 ([#48](https://github.com/higebu/vagrant-vyos/issues/48)) ([f6dad0b](https://github.com/higebu/vagrant-vyos/commit/f6dad0b799ade3ebdc818610d3b2aae4b3de84c9))
+
 ## [1.1.12](https://github.com/higebu/vagrant-vyos/compare/vagrant-vyos-v1.1.11...vagrant-vyos/v1.1.12) (2024-09-02)
 
 
