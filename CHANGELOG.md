@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.13](https://github.com/higebu/vagrant-vyos/compare/vagrant-vyos/v1.1.12...vagrant-vyos/v1.1.13) (2025-11-20)
+
+
+### Bug Fixes
+
+* **deps:** update actions/checkout action to v5 ([#50](https://github.com/higebu/vagrant-vyos/issues/50)) ([9e2133c](https://github.com/higebu/vagrant-vyos/commit/9e2133cd6dd19c56a16cfe5e1054bc3ce2bc902f))
+* **deps:** update actions/checkout action to v6 ([#52](https://github.com/higebu/vagrant-vyos/issues/52)) ([771939e](https://github.com/higebu/vagrant-vyos/commit/771939eb74c2ac2fe50b2ff9252d4daa69de56d3))
+* **deps:** update codecov/codecov-action action to v5 ([#48](https://github.com/higebu/vagrant-vyos/issues/48)) ([f6dad0b](https://github.com/higebu/vagrant-vyos/commit/f6dad0b799ade3ebdc818610d3b2aae4b3de84c9))
+* **deps:** update dependency ruby to v3.4.7 ([#51](https://github.com/higebu/vagrant-vyos/issues/51)) ([aef1510](https://github.com/higebu/vagrant-vyos/commit/aef1510c3e0f2d6d9832c47ef7c2df8826adc294))
+
 ## [1.1.12](https://github.com/higebu/vagrant-vyos/compare/vagrant-vyos-v1.1.11...vagrant-vyos/v1.1.12) (2024-09-02)
 
 
